@@ -1,0 +1,33 @@
+#Simple calculation
+10/4
+36^0.5
+4:2
+(4+1)*(5+3^2-9)/3
+#Variable
+x<-10*8
+#Vector
+color<-c("Blue","Red","Black")
+color
+sky.week<-rep(c("Cloudy", "Blue Sky", "Raining"), c(2,4,1))
+sky.week
+logical<-c(TRUE,FALSE,TRUE)
+logical
+numbers.1<-c(1:15)
+#Matrix
+matrix.1<-matrix(numbers.1,ncol=3)
+matrix.1
+dim(matrix.1)<-c(5,3)
+matrix.1
+matrix.2<-matrix((1:15)*10,nrow=2, byrow=TRUE)
+matrix.2
+#Array
+array.1<-array(letters, dim=c(1,3,5))
+array.1
+#DataFrame
+dataframe.1<-data.frame(matrix.2)
+dataframe.1
+dataframe.2<-data.frame(color,sky.week,logical)
+dataframe.2
+#Liste
+liste.1<-list(x,color,matrix.1,dataframe.2)
+
