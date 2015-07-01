@@ -3,7 +3,9 @@
 36^0.5
 4:2
 (4+1)*(5+3^2-9)/3
-#Variable
+##############
+#Variables
+##############
 x<-10*8
 #Vector
 color<-c("Blue","Red","Black")
@@ -30,4 +32,15 @@ dataframe.2<-data.frame(color,sky.week,logical)
 dataframe.2
 #Liste
 liste.1<-list(x,color,matrix.1,dataframe.2)
+##############
+#Filter/Modifications
+##############
+sum(matrix.2)
+apply(matrix.2,1,sum) #by rows
+matrix.2[matrix.2>=95 & matrix.2<=105]
+matrix.2[,-2] #extract the second column
+matrix.2-2
+rbind(matrix.2,c(20,10,0,1,-2))
+dimnames(matrix.2)<-list(c("r1","r2"),c("c1","c2","c3","c4","c5","c6","c7","c8"))
+sky.week[which(sky.week=="Raining")]<-"Raining+"
 
