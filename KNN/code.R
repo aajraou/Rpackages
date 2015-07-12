@@ -15,3 +15,8 @@ summury(res)
 # MC BC 
 # 0  1 
 # => he sould be good client according to your train data
+#### 
+# Better data visualisation with ggvis
+####
+library(ggvis)
+clients %>% ggvis(~Age,~Anciennete,fill=~Client) %>% layer_points()
